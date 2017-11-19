@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Substitutions are grouped according to several AIML interpreter functions.-->
+<substitutions>
+  <!-- Input substitutions correct spelling mistakes and convert "sentence"-ending characters into characters that will not be identified as sentence enders. -->
+  <input>
+    <correction><!--sentence correction-->
+
+      <substitute find=":-)" replace=" ZAMBET "/>
+      <substitute find=",)" replace=" ZAMBET "/>
+      <substitute find=";)" replace=" ZAMBET "/>
+      <substitute find=";-)" replace=" ZAMBET "/>
+      <substitute find="&quot;" replace=""/>
+      <substitute find="/" replace=" "/>
+      <substitute find="&gt;" replace=" gt "/>
+      <substitute find="&lt;" replace=" lt "/>
+      <substitute find="(" replace=" "/>
+      <substitute find=")" replace=" "/>
+      <substitute find="&amp;" replace=" "/>
+      <substitute find="=" replace=" "/>
+      <substitute find="  " replace=" "/>
+      <substitute find=" l a " replace=" la "/>
+      <substitute find=" o k " replace=" ok "/>
+      <substitute find=" p s " replace=" ps "/>
+      <substitute find=" ohh" replace=" oh"/>
+      <substitute find=" cf" replace=" CE FACI "/>
+      <substitute find=" sal" replace=" BUNA "/>
+      <substitute find=" hei" replace=" BUNA "/>
+      <substitute find=" programer " replace=" PROGRAMATOR "/>
+      <substitute find=" progrmator " replace=" PROGRAMATOR "/>
+
+    </correction>
+
+  </input>
+</substitutions>

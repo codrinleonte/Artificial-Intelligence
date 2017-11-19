@@ -1,0 +1,36 @@
+-----------------------------------------Sah cu pioni-------------------------------
+
+
+
+1.Repr stari
+
+2.Identific starilor speciale Si  SF : castiga - omul 
+					       - calc
+                                               - remiza - nu mai poate muta niciunu dintre jucatori
+	SF - ajunge unul din jucatori cu un pion la capat
+	   - celalalt jucatori ramane fara pioni
+
+
+3.Tranzitii    4 mutari posibile:
+                 - 2 casute in fata sau 1 sa prima mutare doar o data 
+		 - 1 casuta in fata
+		 - 1 casuta oblic cand captureaza
+		 - ampasant 
+
+
+Starea initiala - citire din fisier
+
+
+
+4.strategie ->MIN-MAX
+	    
+            -> prin arbore
+	   
+
+Scor bun - > scor maxim
+
+Functii de scor pentru joc ofensiv/defensiv  -> sa aleaga random din cele doua strategii
+
+
+
+----------------------------------------------------------------------------------------------------

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="chatterbean">
+    <CLASSES>
+      <root url="jar://D:/ProgramingStuff/JARs/Chatterbean/chatterbean.jar!/" />
+      <root url="jar://D:/ProgramingStuff/JARs/Chatterbean/bsh.jar!/" />
+      <root url="jar://D:/ProgramingStuff/JARs/junit.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,30 @@
+
+
+ONTOLOGIE - Taxonomie - > particuarizarea unui concept
+	  - Dictionare
+
+
+2 fisiere -> text pe care facem ontologie si un fisier care contine concepte
+	  
+	  -> sabloane care sa ma ajute sa identific definitiile : este/este definit ca
+
+
+	  -> soft ajutator -> "Protegez"
+
+
+----------------------------------------------
+
+
+4pct -> patternuri in xml
+
+x este definit ca
+x este ...
+
+
+1pct -> unde s-a gasit acea definita
+
+2pct-> alte euristici
+x este numit si ca y
+x is 
+x is a
+x is not

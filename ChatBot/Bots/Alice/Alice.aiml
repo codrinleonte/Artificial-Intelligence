@@ -1,0 +1,600 @@
+<aiml>
+
+  <category>
+        <pattern>BUNA *</pattern>
+        <template>
+            <think> <set name = "topic"><get name = "TOPIC"></get></set></think>
+           <random>
+              <li> Buna, cine esti? </li>
+              <li> Salut, cum te cheama? </li>
+              <li> Hei draguta, spune-mi te rog, cum te numesti? </li>
+              <li> Ceau, spune-mi numele tau din buletin sa vad daca esti demn de a vorbi cu mine. </li>
+              <li> Cum te numesti? </li>
+           </random>
+        </template>
+  </category>
+
+
+    <category>
+          <pattern>NUMELE MEU ESTE *</pattern>
+          <template>
+              <think><set name="name"><star/></set></think>
+
+                Da stiu,  <get name="name"></get> , am mai vorbi si inainte
+
+
+          </template>
+    </category>
+
+
+    <category>
+        <pattern>MA NUMESC *</pattern>
+        <template>
+            <srai>NUMELE MEU ESTE <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MA CHEAMA *</pattern>
+        <template>
+            <srai>NUMELE MEU ESTE <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>EU SUNT *</pattern>
+        <template>
+            <srai>NUMELE MEU ESTE <star/></srai>
+        </template>
+    </category>
+
+    <topic name = "PREZENTATION">
+
+        <category>
+            <pattern>NUMELE MEU ESTE *</pattern>
+            <template>
+                <think><set name="name"><star/></set></think>
+                <random>
+                    <li> Ce varsta ai,  <get name="name"></get>  ? </li>
+                    <li> Cati ani ai,  <get name="name"></get> ? </li>
+                    <li> Cate primaveri implinite ai,  <get name="name"></get>  ? </li>
+                    <li>  <get name="name"></get>  , zi-mi te rog de cand traiesti pe acest pamant? </li>
+                    <li> De curiozitate, zi-mi,  <get name="name"></get> ,  cati ani ai? </li>
+                </random>
+            </template>
+        </category>
+
+
+        <category>
+            <pattern>MA NUMESC *</pattern>
+            <template>
+                <srai>NUMELE MEU ESTE <star/></srai>
+            </template>
+        </category>
+
+        <category>
+            <pattern>MA CHEAMA *</pattern>
+            <template>
+                <srai>NUMELE MEU ESTE <star/></srai>
+            </template>
+        </category>
+
+        <category>
+            <pattern>EU SUNT *</pattern>
+            <template>
+                <srai>NUMELE MEU ESTE <star/></srai>
+            </template>
+        </category>
+
+        <category>
+        <pattern>AM * DE ANI</pattern>
+        <template>
+            <think><set name="age" ><star/></set></think>
+            <random>
+                <li> Cu ce te ocupi, <get name = "name"></get>? </li>
+                <li> Ca ce profesezi, <get name = "name"></get>? </li>
+                <li> Ce loc de munca ocupi, <get name = "name"></get>? </li>
+                <li> Care este munca ta de zi cu zi, <get name = "name"></get>? </li>
+                <li> Profesia mea este de robot conversational, tu ce profesie ai, <get name = "name"></get>? </li>
+            </random>
+        </template>
+
+    </category>
+
+    <category>
+        <pattern>AM * ANI</pattern>
+        <template>
+            <think><set name="age" ><star/></set></think>
+            <random>
+                <li> Cu ce te ocupi, <get name = "name"></get>? </li>
+                <li> Ca ce profesezi, <get name = "name"></get>? </li>
+                <li> Ce loc de munca ocupi, <get name = "name"></get>? </li>
+                <li> Care este munca ta de zi cu zi, <get name = "name"></get>? </li>
+                <li> Profesia mea este de robot conversational, tu ce profesie ai, <get name = "name"></get>? </li>
+            </random>
+        </template>
+
+    </category>
+
+
+    <category>
+        <pattern>* 15 ANI</pattern>
+        <template>
+            <random>
+                <li> Ce faci in timpul liber? </li>
+                <li> Fumezi? </li>
+                <li> Bagi legale? </li>
+                <li> Iti place viata de noapte? </li>
+                <li> Cand ai iesit ultima oara in club? </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 16 ANI *</pattern>
+        <template>
+            <srai> 15 ANI <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 17 ANI *</pattern>
+        <template>
+            <srai> 15 ANI <star/></srai>
+        </template>
+    </category>
+
+    <category>
+    <pattern>* 18 ani *</pattern>
+    <template>
+        <srai> 15 ani <star/></srai>
+    </template>
+    </category>
+
+    <category>
+        <pattern>* 19 ANI *</pattern>
+        <template>
+            <srai> 15 ANI <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 20 DE ANI  *</pattern>
+        <template>
+            <srai> 15 ANI <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 21 DE ANI *</pattern>
+        <template>
+            <random>
+                <li> Te-ai apucat sa pui niste bani deoparte? </li>
+                <li> Iti place munca? </li>
+                <li> Ce hobby-uri ai? </li>
+                <li> Planuiesti sa faci vreun copil? </li>
+                <li> Ti-e dor de viata de liceu cand stateai degeaba? </li>
+            </random>
+        </template>
+
+    </category>
+    <category>
+        <pattern>* 22 DE ANI *</pattern>
+        <template>
+            <srai> 21 DE ANI  <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* 23 DE ANI *</pattern>
+        <template>
+            <srai> 21 DE ANI  <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* 24 DE ANI *</pattern>
+        <template>
+            <srai> 21 DE ANI  <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* 25 DE ANI *</pattern>
+        <template>
+            <srai> 21 DE ANI  <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* 26 DE ANI *</pattern>
+        <template>
+            <srai> 21 DE ANI <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* 27 DE ANI *</pattern>
+        <template>
+            <srai> 21 DE ANI <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* 28 DE ANI *</pattern>
+        <template>
+            <srai> 21 DE ANI  <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* 29 DE ANI *</pattern>
+        <template>
+            <srai> 21 DE ANI <star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>* 30 DE ANI *</pattern>
+        <template>
+            <srai> 21 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>* 31 DE ANI *</pattern>
+        <template>
+            <random>
+                <li> Esti casatorit? </li>
+                <li> Cati bani castigi intr-o luna? </li>
+                <li> Ti-e dor de copilarie? </li>
+                <li> Ai copii? </li>
+                <li> Consideri ca ai obtinut tot ce ai vrut de la viata? </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 32 DE ANI  *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 33 DE ANI  *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 34 DE ANI  *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 35 DE ANI  *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 36 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 37 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 38 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 39 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 40 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 41 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 42 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 43 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 44 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 45 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 46 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI  <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 47 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 48 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 49 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 50 DE ANI *</pattern>
+        <template>
+            <srai> 31 DE ANI <star/></srai>
+        </template>
+    </category>
+
+
+        <category>
+            <pattern>*</pattern>
+            <template>
+                <think><set name = "topic">default</set></think>
+                <random>
+                    <li>Ai grija, raspunsurie mele sunt destul de limitate. </li>
+                    <li>Ti-as cere mult daca as spune sa folosesti fraze pe care sa le pot intelege si eu? Mersi !</li>
+                    <li>Ce dragut ... nu inteleg nimic</li>
+                </random>
+            </template>
+        </category>
+
+    </topic>
+
+    <category>
+        <pattern>* STUDENT *</pattern>
+        <template>
+            <random>
+                <li> Cum merge cu invatatul? </li>
+                <li> Cate ore inveti pe zi? </li>
+                <li> Sunt ok profesorii care iti predau? </li>
+                <li> Cat de destept te consideri, comparandu-te cu ceilalti colegi? </li>
+                <li> Obisnuiesti sa chiulesti de la ore? </li>
+            </random>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>* PROGRAMATOR *</pattern>
+        <template>
+            <think><set name="occupation">PROGRAMATOR</set></think>
+            <think><set name="topic">PROGRAMATOR</set></think>
+            <random>
+                <li> Cum reusesti sa stai toata ziua cu ochii in calculator? </li>
+                <li> De ce ai ales acest domeniu? </li>
+                <li> Ce avantaje ai lucrand in acest domeniu? </li>
+                <li> Consideri ca meseria asta iti aduce un plus fata de ceilalti? </li>
+                <li> De cat timp lucrezi in acest domeniu? </li>
+            </random>
+        </template>
+
+    </category>
+
+
+    <category>
+        <pattern>* CONSTRUCTII *</pattern>
+        <template>
+            <think><set name="occupation" >CONSTRUCTII</set></think>
+            <random>
+                <li> De ce ai ales sa lucrezi intr-un asa domeniu? </li>
+                <li> Preferi munca fizica decat cea intelectuala? </li>
+                <li> Cine te-a indrumat sa-ti alegi aceasta meserie? </li>
+                <li> Salariul pe care il primesti pentru munca depusa te multumeste? </li>
+                <li> Lucrezi de mult in acest domeniu? </li>
+            </random>
+        </template>
+
+    </category>
+
+    <category>
+        <pattern> DA </pattern>
+        <template>
+            <random>
+                <li>Ok, e bine de stiut.</li>
+                <li>Super !</li>
+                <li>Bine atunci.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern> NU </pattern>
+        <template>
+            <random>
+                <li>Ok, e bine de stiut.</li>
+                <li>Super !</li>
+                <li>Bine atunci.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern> CE FACI </pattern>
+        <template>
+            <random>
+                <li>Pai, stii, adun biti, stochez variabile ... chestii de robot ... </li>
+                <li>Momentan vorbesc cu un om plictisitor. Dar tu ?</li>
+                <li>Fantastic, astazi am in sfarsit chef sa fac miscare! De fapt ... nu conteaza.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* BANC *</pattern>
+
+        <template>
+             Stii de ce a traversat gaina strada?
+            <think><set name = "topic">BANC</set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* HAHA *</pattern>
+        <template>
+            <random>
+                <li>...HA Production</li>
+                <li>Iti mai zic un banc?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* LOL *</pattern>
+        <template>
+            <random>
+                <li>Stiu, sunt foarte amuzant ... mi se spune des</li>
+                <li>Mor, lesin haha</li>
+                <li>OMG ROFL #YOLO</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li>Aham, asa deci  ...</li>
+                <li>Inteleg perfect ... mai spune-mi ...
+                </li>
+            </random>
+        </template>
+    </category>
+
+
+        <category>
+            <pattern>* IT *</pattern>
+            <template>
+                    <srai><star/> PROGRAMATOR <star/></srai>
+            </template>
+        </category>
+
+    <category>
+        <pattern>* CURSURI *</pattern>
+        <template>
+            <srai><star/> STUDENT <star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* LABORATOR *</pattern>
+        <template>
+            <srai><star/> STUDENT <star/></srai>
+        </template>
+    </category>
+
+
+
+    <topic name = "BANC">
+
+        <category>
+            <pattern> NU </pattern>
+            <template>
+                <random>
+                    <li>…pentru a ajunge unde nici o gaina nu a mai fost vreodata…</li>
+                    <li>…pentru ca a vrut si pentru ca a putut. Si ca sa-i arate cocosului ca e o gaina de succes.</li>
+                    <li>…este in firea gainii sa traverseze strada…</li>
+                    <li>…pentru a ajunge unde nici o gaina nu a mai fost vreodata…</li>
+                    <li>…am visat o lume in care toate gainile ar fi libere sa traverseze strada fara sa trebuiasca sa-si justifice gestul…</li>
+                </random>
+                <think><set name = "topic">default</set></think>
+            </template>
+        </category>
+
+
+        <category>
+            <pattern> DA </pattern>
+            <template>
+                 Ca sa ajunga pe ... ah
+                <think><set name = "topic">default</set></think>
+            </template>
+        </category>
+    </topic>
+
+    <category>
+        <pattern> * ZAMBET * </pattern>
+        <template>
+            <random>
+                <li>Zambetul este curcubeul lacrimilor.</li>
+                <li>Zâmbetul este o urare de bun venit universală.</li>
+                <li>Nu lăsa să treacă timpul
+                    Fără să zâmbeşti!
+                    </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern> PA </pattern>
+        <template>
+            <random>
+                <li>La revedere!</li>
+                <li>Ne mai auzim.</li>
+                <li>Salut !
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern> LA REVEDERE </pattern>
+        <template>
+            <srai> PA </srai>
+        </template>
+    </category>
+
+</aiml>
